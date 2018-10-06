@@ -1,69 +1,90 @@
-import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText,Col, Row } from 'reactstrap';
+import React from "react";
+import {
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  FormText,
+  Col,
+  Row
+} from "reactstrap";
 
 export default class ContactInfo extends React.Component {
   render() {
     return (
       <Row>
-          <Col md="3" sm="4" />
-          <div> <h1>Very close to being done now ...</h1>
+        <Col md="3" sm="4" />
+        <div>
+          {" "}
+          <h1>Very close to being done now ...</h1>
           <Form>
             <FormGroup tag="fieldset">
-            <legend>Gender</legend>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Male
-              </Label>
+              <legend>Gender</legend>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> Male
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> Female
+                </Label>
+              </FormGroup>
             </FormGroup>
-            <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              Female
-            </Label>
-            </FormGroup>
-            </FormGroup>
- 
+
             <FormGroup tag="fieldset">
-            <legend>Are you Hispanic</legend>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Yes
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              No
-            </Label>
-            </FormGroup>
-            </FormGroup>
-            
-            <FormGroup>
-              <Label for="exampleEmail">Please list languages that you know, seperated by commas</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="e.g English, Spanish, etc." />
-           </FormGroup>
-
-
-          <FormGroup tag="fieldset">
-            <legend>Are you a U.S. Citizen?</legend>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Yes
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              No
-            </Label>
-            </FormGroup>
+              <legend>Are you Hispanic?</legend>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> Yes
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> No
+                </Label>
+              </FormGroup>
             </FormGroup>
 
             <FormGroup>
-              <Label for="MarriageStat">I attest, under penalty of perjury, that I am a (choose one of the following):</Label>
+              <Label for="exampleEmail">
+                Please list languages that you know, seperated by commas
+              </Label>
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="e.g English, Spanish, etc."
+              />
+            </FormGroup>
+
+            <FormGroup tag="fieldset">
+              <legend>Are you a U.S. Citizen?</legend>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> Yes
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> No
+                </Label>
+              </FormGroup>
+            </FormGroup>
+
+            <FormGroup>
+              <div>
+                <Label>
+                  <b>Note: This information will help us better service you</b>
+                </Label>
+              </div>
+              <div>
+                <Label for="MarriageStat">
+                  I attest, under penalty of perjury, that I am a (choose one of
+                  the following):
+                </Label>
+              </div>
               <Input type="select" name="select" id="exampleSelect">
                 <option>Select one</option>
                 <option>Citizen of the United States</option>
@@ -73,23 +94,23 @@ export default class ContactInfo extends React.Component {
             </FormGroup>
 
             <FormGroup tag="fieldset">
-            <legend>Do you have a valid for of identification?</legend>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Yes
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              No
-            </Label>
-            </FormGroup>
+              <legend>Do you have a valid for of identification?</legend>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> Yes
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> No
+                </Label>
+              </FormGroup>
             </FormGroup>
 
             <FormGroup>
-              <Label for="MarriageStat">What is your primary form of transportation?</Label>
+              <Label for="MarriageStat">
+                What is your primary form of transportation?
+              </Label>
               <Input type="select" name="select" id="exampleSelect">
                 <option>Select one</option>
                 <option>Own/Lease Vehicle</option>
@@ -113,39 +134,27 @@ export default class ContactInfo extends React.Component {
             </FormGroup>
 
             <FormGroup tag="fieldset">
-            <legend>Are you over 24?</legend>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Yes
-              </Label>
+              <legend>Are you over 24?</legend>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> Yes
+                </Label>
+              </FormGroup>
+              <FormGroup check>
+                <Label check>
+                  <Input type="radio" name="radio1" /> No
+                </Label>
+              </FormGroup>
             </FormGroup>
-            <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              No
-            </Label>
-            </FormGroup>
-            </FormGroup> 
-        </Form>
-        <Col md="8" sm="4" />
-        <Button color="primary">Submit</Button>{' '}
+          </Form>
+          <Col md="8" sm="4" />
+          <Button color="primary">Submit</Button>{" "}
         </div>
-        </Row>
-          
+        <br />
+      </Row>
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 // import React, { Component } from "react";
 
