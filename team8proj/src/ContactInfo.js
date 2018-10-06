@@ -6,7 +6,7 @@ class ContactInfo extends Component {
 
     constructor(props){
         super(props)
-        this.state = {
+        this.state = 
             name:this.props.name,
             email:this.props.email,
             password:this.props.password,
@@ -21,6 +21,10 @@ class ContactInfo extends Component {
 
     render() {
         return (
+            <div>
+            <div className="text-center">25%</div>
+            <Progress value="25" />
+          </div>
             <div>
                 <h1>
                 Welcome to the SER Job Application
