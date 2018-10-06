@@ -24,12 +24,6 @@ class Welcome extends Component {
     }
     return (
       <div>
-        <img src="http://localhost:3600/avatar/0009" alt="avatar"/>//works
-        <Media
-           object
-           data-src="./team8proj/src/media/homepage.jpg"
-          alt="Generic placeholder image" >
-       </Media>
           <Row>
             <Col md="3" sm="4" />
             <Col md="6" sm="4">
