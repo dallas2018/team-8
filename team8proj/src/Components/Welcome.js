@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {Media} from 'reactstrap';
-
+import { Link, Route } from "react-router-dom";
+import ContactInfo from "./ContactInfo";
 import {
   Jumbotron,
   Button,
@@ -8,8 +8,7 @@ import {
   Label,
   Input,
   Col,
-  Row,
-  Container
+  Row
 } from "reactstrap";
 
 class Welcome extends Component {
@@ -24,31 +23,32 @@ class Welcome extends Component {
     }
     return (
       <div>
-          <Row>
-            <Col md="3" sm="4" />
-            <Col md="6" sm="4">
-              <Jumbotron>
-                
-                <h3 className="display-3 text-center">
-                  Welcome to SER Houston Application
-                </h3>
-                <FormGroup>
-                  <Label for="exampleEmail">Email</Label>
-                  <Input type="email" name="email" id="exampleEmail" />
-                </FormGroup>
-                <FormGroup>
-                  <Label for="examplePassword">Password</Label>
-                  <Input type="password" name="password" id="examplePassword" />
-                </FormGroup>
-                <Button color="primary" onClick={handleLogin}>
+        <Row>
+          <Col md="3" sm="4" />
+          <Col md="6" sm="4">
+            <Jumbotron>
+              <h3 className="display-3 text-center">
+                Welcome to SER Houston Application
+              </h3>
+              <FormGroup>
+                <Label for="exampleEmail">Email</Label>
+                <Input type="email" name="email" id="exampleEmail" />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePassword">Password</Label>
+                <Input type="password" name="password" id="examplePassword" />
+              </FormGroup>
+              <span>
+                <Link to="/ContactInfo">Start New</Link>
+                <Button color="primary" onClick={handleLogin} to="">
                   Login
                 </Button>
-                <hr className="my-2" />
-              </Jumbotron>
-            </Col>
-            <Col md="3" sm="4" />
-          </Row>
-        
+              </span>
+              <hr className="my-2" />
+            </Jumbotron>
+          </Col>
+          <Col md="3" sm="4" />
+        </Row>
       </div>
     );
   }
