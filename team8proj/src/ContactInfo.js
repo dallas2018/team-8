@@ -30,28 +30,28 @@ class ContactInfo extends Component {
                         Name:
                         <input type="text" name="name"/>
                         <div>Email:
-                        <input type="text" email="email"/>
+                        <input type="text" name="email"/>
                         </div>
                         <div>Password:
-                        <input type="text" password="password"/>
+                        <input type="password" name="password"/>
                         </div>
                         <div>Street:
-                        <input type="text" street="street"/>
+                        <input type="text" name="street"/>
                         </div>
                         <div>City:
-                        <input type="text" city="city"/>
+                        <input type="text" name="city"/>
                         </div>
                         <div>State:
-                        <input type="text" state="state"/>
+                        <input type="text" name="state"/>
                         </div>
                         <div>Zip:
-                        <input type="text" zip="zip"/>
+                        <input type="text" name="zip"/>
                         </div>
                         <div>Phone:
-                        <input type="text" phone="phone"/>
+                        <input type="text" name="phone"/>
                         </div>
                         <div>DOB:
-                        <input type="text" dob="DOB"/>
+                        <input type="Date" name="DOB"/>
                         </div>
                     </label>
                 </form>
