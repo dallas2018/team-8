@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText,Col, Row } from 'reactstrap';
 
-export default class Example extends React.Component {
+export default class ContactInfo extends React.Component {
   render() {
     return (
       <Row>
@@ -38,7 +38,7 @@ export default class Example extends React.Component {
               </Input>
             </FormGroup>
             <FormGroup>
-              <Label for="Under17YrOld">How many children are there under your household that are 17 and under</Label>
+              <Label for="Under17YrOld">How many children are there under your household that are 17 and under?</Label>
               <Input type="select" name="select" id="exampleSelect">
                 <option>0</option>
                 <option>1</option>
@@ -48,144 +48,95 @@ export default class Example extends React.Component {
               </Input>
             </FormGroup>
             <FormGroup>
-              <Label for="exampleText">Text Area</Label>
-              <Input type="textarea" name="text" id="exampleText" />
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleFile">File</Label>
-              <Input type="file" name="file" id="exampleFile" />
-              <FormText color="muted">
-                This is some placeholder block-level help text for the above input.
-                It's a bit lighter and easily wraps to a new line.
-              </FormText>
-            </FormGroup>
-            <FormGroup tag="fieldset">
-              <legend>Radio Buttons</legend>
-              <FormGroup check>
-                <Label check>
-                  <Input type="radio" name="radio1" />{' '}
-                  Option one is this and that—be sure to include why it's great
-                </Label>
+              <Label for="18-24YrOld">How many young adults are there under your household that are between 18 and 24></Label>
+              <Input type="select" name="select" id="exampleSelect">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </Input>
               </FormGroup>
-              <FormGroup check>
-                <Label check>
-                  <Input type="radio" name="radio1" />{' '}
-                  Option two can be something else and selecting it will deselect option one
-                </Label>
-              </FormGroup>
-              <FormGroup check disabled>
-                <Label check>
-                  <Input type="radio" name="radio1" disabled />{' '}
-                  Option three is disabled
-                </Label>
-              </FormGroup>
+              <FormGroup>
+              <Label for="adultsTotal">How many adults live in your household?</Label>
+              <Input type="select" name="select" id="exampleSelect">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </Input>
             </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="checkbox" />{' '}
-                Check me out
-              </Label>
-            </FormGroup>
-            <Button>Submit</Button>
-          </Form>
-          </div>
-          </Row>
+
+          <FormGroup tag="fieldset">
+          <legend>Checkings Account</legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I have a Checkings Account
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I do not have a Checkings Account
+            </Label>
+          </FormGroup>
+        </FormGroup>
+
+        <FormGroup tag="fieldset">
+          <legend>Savings Account</legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I have a Savings Account
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I do not have a Savings Account
+            </Label>
+          </FormGroup>
+        </FormGroup>
+
+        <FormGroup tag="fieldset">
+          <legend>Payday Loan</legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I have a Payday Loan
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I do not have a Payday Loan
+            </Label>
+          </FormGroup>
+        </FormGroup>
+
+        <FormGroup tag="fieldset">
+          <legend>Car Title Loan</legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I have a Car Title Loan
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              I do not have a Car Title Loan
+            </Label>
+          </FormGroup>
+        </FormGroup>
+        </Form>
+        <Col md="8" sm="4" />
+        <Button color="primary">Continue to Success</Button>{' '}
+        </div>
+        </Row>
           
     );
   }
 }
-
-
-
-
-
-
-
-
-
-// import React, {Component} from 'react';
-
-// class HouseholdInfo extends Component{
-//     constructor(props)
-//     {
-//         super(props)
-//         this.state = 
-//         {
-//             maritalStatus: this.props.maritalStatus,
-//             annualIncome: this.props.annualIncome,
-//             numOfChildren: this.props.numOfChildren,
-//             numOfYoungAdults: this.props.numOfYoungAdults,
-//             numOfAdults: this.props.numOfAdults,
-//             checkingAccount: this.props.checkingAccount,
-//             savingsAccount: this.props.savingsAccount,
-//             paydayLoan: this.props.paydayLoan,
-//             carTitleLoan: this.props.carTitleLoan
-//         }
-//     }
-
-//     render()
-//     {
-//         return(
-//             <div>
-//                 <h2>Congratulations, we just need a little bit more information so we can make you successful</h2>
-//             <form>
-//                 <label>
-//                         Marital Status:
-//                         <select maritalStatus = "Marital Status">
-//                         <option value="none"></option>
-//                         <option value="Single">Single</option>
-//                         <option value="Married">Married</option>
-//                         <option value="Widowed">Widowed</option>
-//                         </select> 
-//                         <div>Annnual Income:  
-//                         <input type="text" annualIncome="annualIncome"/>
-//                         </div>
-//                         <div>Number of Children:
-//                         <select maritalStatus = "Marital Status">
-//                         <option value="none"></option>
-//                         <option value="1">1</option>
-//                         <option value="2">2</option>
-//                         <option value="3">3</option>
-//                         <option value="4+">4+</option>
-//                         </select> 
-//                         </div>
-//                         <div>Number of Young Adults (18-24) in the Household:
-//                         <select numOfYoungAdults = "Number young Adults in Household">
-//                         <option value="none"></option>
-//                         <option value="1">1</option>
-//                         <option value="2">2</option>
-//                         <option value="3">3</option>
-//                         <option value="4+">4+</option>
-//                         </select> 
-//                         </div>
-//                         <div>Number of Adults in the Household:
-//                         <select numOfAdults = "Number Adults in Household">
-//                         <option value="none"></option>
-//                         <option value="1">1</option>
-//                         <option value="2">2</option>
-//                         <option value="3">3</option>
-//                         <option value="4+">4+</option>
-//                         </select> 
-//                         </div>
-//                         <div>Do you have a Checkings Account:
-//                         <select checkingAccount = "CheckingsAccount">
-//                         <option value="none"></option>
-//                         <option value="yes">Yes</option>
-//                         <option value="no">No</option>
-//                         </select> 
-//                         </div>
-//                         <div>Do you have a Savings Account:
-//                         <select savingsAccount = "SavingsAccount">
-//                         <option value="none"></option>
-//                         <option value="yes">Yes</option>
-//                         <option value="no">No</option>
-//                         </select> 
-//                         </div>
-                        
-//                 </label>
-//             </form>
-//             </div>
-//         )
-//     }
-// }
-// export default HouseholdInfo;
