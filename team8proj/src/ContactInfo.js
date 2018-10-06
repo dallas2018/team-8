@@ -54,11 +54,6 @@ class ContactInfo extends Component {
                     </label>
                 </form>
             </div>
-            /* <div>
-                {this.state.name}
-                <div>{this.state.address}</div>
-                {console.log(this.props.name)}
-            </div> */
         );
     }
 }
