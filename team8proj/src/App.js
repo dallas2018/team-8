@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 //import logo from './logo.svg';
 import "./App.css";
-// import ContactInfo from "./ContactInfo";
+import { Link, Route } from "react-router-dom";
+import ContactInfo from "./ContactInfo";
 import Welcome from "./Components/Welcome";
 
 class App extends Component {
@@ -13,8 +14,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Welcome />
+        <Link to="/">Home</Link>
+        <Link to="/ContactInfo">ContactInfo</Link>
+
+        <Route path="/" component={Welcome} />
+        <Route path="/ContactInfo" component={ContactInfo} />
       </div>
+      // <div>
+      //   <Welcome />
+      // </div>
     );
   }
 }
