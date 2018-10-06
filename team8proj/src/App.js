@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 //import logo from './logo.svg';
-import './App.css';
-import ContactInfo from'./ContactInfo';
+import "./App.css";
+// import ContactInfo from "./ContactInfo";
+import Welcome from "./Components/Welcome";
 
 createStackNavigator({
 // For each screen that you can navigate to, create a new entry like this:
@@ -16,14 +17,19 @@ Contact: {
 });
 
 class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {}
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
   render() {
     return (
       <div>
+<<<<<<< HEAD
+        <Welcome />
+        {/* <ContactInfo /> */}
+      </div>
+=======
 
         <form>
           <label>
@@ -53,6 +59,7 @@ class HomeScreen extends React.Component {
           onPress={() => this.props.navigation.navigate('Contact')}
         />
       </View>
+>>>>>>> 323dc1a8d9869df6e8fb81d2dfa3f9532208bb62
     );
   }
 }
