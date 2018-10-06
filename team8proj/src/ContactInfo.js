@@ -58,11 +58,6 @@ class ContactInfo extends Component {
                 //<img className="menu_icons" src={myhome}/>;
                 //<label className="menu_items" onClick={this.home}>Next page</label>;
             </div>
-            /* <div>
-                {this.state.name}
-                <div>{this.state.address}</div>
-                {console.log(this.props.name)}
-            </div> */
         );
     }
 }
