@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {Media} from 'reactstrap';
+
 import {
   Jumbotron,
   Button,
@@ -22,11 +24,11 @@ class Welcome extends Component {
     }
     return (
       <div>
-        <Container>
           <Row>
-            <Col xs="6" sm="4" />
-            <Col xs="6" sm="4">
+            <Col md="3" sm="4" />
+            <Col md="6" sm="4">
               <Jumbotron>
+                
                 <h3 className="display-3 text-center">
                   Welcome to SER Houston Application
                 </h3>
@@ -44,9 +46,9 @@ class Welcome extends Component {
                 <hr className="my-2" />
               </Jumbotron>
             </Col>
-            <Col xs="6" sm="4" />
+            <Col md="3" sm="4" />
           </Row>
-        </Container>
+        
       </div>
     );
   }
