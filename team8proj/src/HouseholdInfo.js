@@ -22,39 +22,64 @@ class HouseholdInfo extends Component{
     {
         return(
             <div>
-                {this.state.maritalStatus}
-                {console.log(this.props.maritalStatus)}
-            </div>
+                <h2>Congratulations, we just need a little bit more information so we can make you successful</h2>
             <form>
                 <label>
-                        Marital Status:  
-                        <input type="text" name="name"/>
-                        <div>Email:  
-                        <input type="text" email="email"/>
+                        Marital Status:
+                        <select maritalStatus = "Marital Status">
+                        <option value="none"></option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                        </select> 
+                        <div>Annnual Income:  
+                        <input type="text" annualIncome="annualIncome"/>
                         </div>
-                        <div>Password:  
-                        <input type="text" password="password"/>
+                        <div>Number of Children:
+                        <select maritalStatus = "Marital Status">
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                        </select> 
                         </div>
-                        <div>Street: 
-                        <input type="text" street="street"/>
+                        <div>Number of Young Adults (18-24) in the Household:
+                        <select numOfYoungAdults = "Number young Adults in Household">
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                        </select> 
                         </div>
-                        <div>City: 
-                        <input type="text" city="city"/>
+                        <div>Number of Adults in the Household:
+                        <select numOfAdults = "Number Adults in Household">
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                        </select> 
                         </div>
-                        <div>State: 
-                        <input type="text" state="state"/>
+                        <div>Do you have a Checkings Account:
+                        <select checkingAccount = "CheckingsAccount">
+                        <option value="none"></option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select> 
                         </div>
-                        <div>Zip: 
-                        <input type="text" zip="zip"/>
+                        <div>Do you have a Savings Account:
+                        <select savingsAccount = "SavingsAccount">
+                        <option value="none"></option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select> 
                         </div>
-                        <div>Phone: 
-                        <input type="text" phone="phone"/>
-                        </div>
-                        <div>DOB: 
-                        <input type="text" dob="DOB"/>
-                        </div>
+                        
                 </label>
             </form>
+            </div>
         )
     }
 }
