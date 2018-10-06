@@ -75,8 +75,3 @@ primary key (loginID)
 
 -- TRIGGERS
 
-DELIMITER $$
-create trigger status_create
-after insert on Applicant for each row begin
-		insert into applicant_Status (statusID, applicantID, Form1, Form2, Form3, Form4) values (statusID, new.applicantID, '0','0','0','0');
-	END$$
