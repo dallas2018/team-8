@@ -1,25 +1,42 @@
-import React from 'react';
-import { Container, Button, Form, FormGroup, Label, Input, FormText,Col, Row } from 'reactstrap';
+import React from "react";
+import { Button, Form, FormGroup, Label, Input, Col, Row } from "reactstrap";
 
 export default class ContactInfo extends React.Component {
   render() {
     return (
       <Row>
-          <Col md ="3" sm="4"/>
-          <div> <h1>Welcome to SER Houston Online Application</h1>
+        <Col md="3" sm="4" />
+        <div>
+          {" "}
+          <h1>Welcome to SER Houston Online Application</h1>
           <h4>We are excited to help you become successful!</h4>
           <Form>
             <FormGroup>
               <Label for="exampleEmail">First Name</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Enter your First Name" />
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="Enter your First Name"
+              />
             </FormGroup>
             <FormGroup>
               <Label for="exampleEmail">Last Name</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Enter your Last Name" />
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="Enter your Last Name"
+              />
             </FormGroup>
             <FormGroup>
               <Label for="exampleEmail">Address</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Enter your Street Address" />
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="Enter your Street Address"
+              />
             </FormGroup>
             <FormGroup>
               <Label for="County">Please select your County</Label>
@@ -36,8 +53,15 @@ export default class ContactInfo extends React.Component {
               </Input>
             </FormGroup>
             <FormGroup>
-              <Label for="exampleEmail">Please enter your Social Security</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Enter your Social Security" />
+              <Label for="exampleEmail">
+                Please enter your Social Security
+              </Label>
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="Enter your Social Security"
+              />
             </FormGroup>
             <FormGroup>
               <Label for="Phone Choice">Preferred Phone</Label>
@@ -46,26 +70,24 @@ export default class ContactInfo extends React.Component {
                 <option>Home</option>
                 <option>Work</option>
               </Input>
-              </FormGroup>
-              <FormGroup>
-              <Label for="exampleEmail"> Number</Label>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Enter your Phone Number" />
             </FormGroup>
-            </Form>
-            <Col md="8" sm="4" />
-            <Button color="primary">You're almost done!</Button>{' '}
+            <FormGroup>
+              <Label for="exampleEmail"> Number</Label>
+              <Input
+                type="email"
+                name="email"
+                id="exampleEmail"
+                placeholder="Enter your Phone Number"
+              />
+            </FormGroup>
+          </Form>
+          <Col md="8" sm="4" />
+          <Button color="primary">You're almost done!</Button>{" "}
         </div>
       </Row>
-          
     );
   }
 }
-
-
-
-
-
-
 
 // import React, { Component } from 'react';
 // import { Button, View, Text } from 'react-native';
@@ -75,7 +97,7 @@ export default class ContactInfo extends React.Component {
 
 //     constructor(props){
 //         super(props)
-//         this.state = 
+//         this.state =
 //             name:this.props.name,
 //             email:this.props.email,
 //             password:this.props.password,

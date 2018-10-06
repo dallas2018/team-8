@@ -19,6 +19,7 @@ class Welcome extends Component {
   render() {
     function handleLogin(e) {
       e.preventDefault();
+
       console.log("Login Clicked");
     }
     return (
@@ -39,8 +40,8 @@ class Welcome extends Component {
                 <Input type="password" name="password" id="examplePassword" />
               </FormGroup>
               <span>
-                <Link to="/ContactInfo">Start New</Link>
-                <Button color="primary" onClick={handleLogin} to="">
+                {/* <Link to="/ContactInfo">Start</Link> */}
+                <Button color="primary" onClick={handleLogin}>
                   Login
                 </Button>
               </span>
