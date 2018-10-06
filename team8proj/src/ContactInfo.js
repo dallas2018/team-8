@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Button, View, Text } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
 class ContactInfo extends Component {
 
@@ -25,34 +27,36 @@ class ContactInfo extends Component {
                 </h1>
                 <form>
                     <label>
-                        Name:  
+                        Name:
                         <input type="text" name="name"/>
-                        <div>Email:  
+                        <div>Email:
                         <input type="text" email="email"/>
                         </div>
-                        <div>Password:  
+                        <div>Password:
                         <input type="text" password="password"/>
                         </div>
-                        <div>Street: 
+                        <div>Street:
                         <input type="text" street="street"/>
                         </div>
-                        <div>City: 
+                        <div>City:
                         <input type="text" city="city"/>
                         </div>
-                        <div>State: 
+                        <div>State:
                         <input type="text" state="state"/>
                         </div>
-                        <div>Zip: 
+                        <div>Zip:
                         <input type="text" zip="zip"/>
                         </div>
-                        <div>Phone: 
+                        <div>Phone:
                         <input type="text" phone="phone"/>
                         </div>
-                        <div>DOB: 
+                        <div>DOB:
                         <input type="text" dob="DOB"/>
                         </div>
                     </label>
                 </form>
+                //<img className="menu_icons" src={myhome}/>;
+                //<label className="menu_items" onClick={this.home}>Next page</label>;
             </div>
             /* <div>
                 {this.state.name}
