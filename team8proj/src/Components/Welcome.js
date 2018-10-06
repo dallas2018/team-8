@@ -22,6 +22,7 @@ class Welcome extends Component {
 
       console.log("Login Clicked");
     }
+    function startNewForm(e) {}
     return (
       <div>
         <Row>
@@ -40,10 +41,15 @@ class Welcome extends Component {
                 <Input type="password" name="password" id="examplePassword" />
               </FormGroup>
               <span>
-                {/* <Link to="/ContactInfo">Start</Link> */}
-                <Button color="primary" onClick={handleLogin}>
-                  Login
-                </Button>
+                <div>
+                  <Button color="primary" onClick={handleLogin}>
+                    Login
+                  </Button>
+                </div>
+                <br />
+                <Link to="/ContactInfo">
+                  <Button color="primary">Start New Life</Button>
+                </Link>
               </span>
               <hr className="my-2" />
             </Jumbotron>

@@ -4,6 +4,7 @@ import "./App.css";
 import { Link, Route } from "react-router-dom";
 import ContactInfo from "./Components/ContactInfo";
 import Welcome from "./Components/Welcome";
+import DemagraInfo from "./Components/DemagraInfo";
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
       <div>
         <Route path="/" component={Welcome} />
         <Route path="/ContactInfo" component={ContactInfo} />
+        <Route path="/DemagraInfo" component={DemagraInfo} />
       </div>
     );
   }

@@ -1,90 +1,100 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, Col, Row } from "reactstrap";
+import { Link, Route } from "react-router-dom";
+import DemagraInfo from "./DemagraInfo";
 
 export default class ContactInfo extends React.Component {
   render() {
     return (
-      <Row>
-        <Col md="3" sm="4" />
-        <div>
-          {" "}
-          <h1>Welcome to SER Houston Online Application</h1>
-          <h4>We are excited to help you become successful!</h4>
-          <Form>
-            <FormGroup>
-              <Label for="exampleEmail">First Name</Label>
-              <Input
-                type="email"
-                name="email"
-                id="exampleEmail"
-                placeholder="Enter your First Name"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleEmail">Last Name</Label>
-              <Input
-                type="email"
-                name="email"
-                id="exampleEmail"
-                placeholder="Enter your Last Name"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleEmail">Address</Label>
-              <Input
-                type="email"
-                name="email"
-                id="exampleEmail"
-                placeholder="Enter your Street Address"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="County">Please select your County</Label>
-              <Input type="select" name="select" id="exampleSelect">
-                <option>Brazoria</option>
-                <option>Chambers</option>
-                <option>Fort Bend</option>
-                <option>Galveston</option>
-                <option>Harris</option>
-                <option>Liberty</option>
-                <option>Montgomery</option>
-                <option>Waller</option>
-                <option>Other</option>
-              </Input>
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleEmail">
-                Please enter your Social Security
-              </Label>
-              <Input
-                type="email"
-                name="email"
-                id="exampleEmail"
-                placeholder="Enter your Social Security"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="Phone Choice">Preferred Phone</Label>
-              <Input type="select" name="select" id="exampleSelect">
-                <option>Mobile</option>
-                <option>Home</option>
-                <option>Work</option>
-              </Input>
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleEmail"> Number</Label>
-              <Input
-                type="email"
-                name="email"
-                id="exampleEmail"
-                placeholder="Enter your Phone Number"
-              />
-            </FormGroup>
-          </Form>
-          <Col md="8" sm="4" />
-          <Button color="primary">You're almost done!</Button>{" "}
-        </div>
-      </Row>
+      <div>
+        <Row>
+          <Col md="3" sm="4" />
+          <div>
+            {" "}
+            <h1>Start Your Application</h1>
+            <br />
+            <h4>We are excited to help you become successful!</h4>
+            <Form>
+              <FormGroup>
+                <Label for="exampleEmail">First Name</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  id="exampleEmail"
+                  placeholder="Enter your First Name"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleEmail">Last Name</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  id="exampleEmail"
+                  placeholder="Enter your Last Name"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleEmail">Address</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  id="exampleEmail"
+                  placeholder="Enter your Street Address"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="County">Please select your County</Label>
+                <Input type="select" name="select" id="exampleSelect">
+                  <option>Brazoria</option>
+                  <option>Chambers</option>
+                  <option>Fort Bend</option>
+                  <option>Galveston</option>
+                  <option>Harris</option>
+                  <option>Liberty</option>
+                  <option>Montgomery</option>
+                  <option>Waller</option>
+                  <option>Other</option>
+                </Input>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleEmail">
+                  Please enter your Social Security
+                </Label>
+                <Input
+                  type="email"
+                  name="email"
+                  id="exampleEmail"
+                  placeholder="Enter your Social Security"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="Phone Choice">Preferred Phone</Label>
+                <Input type="select" name="select" id="exampleSelect">
+                  <option>Mobile</option>
+                  <option>Home</option>
+                  <option>Work</option>
+                </Input>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleEmail"> Number</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  id="exampleEmail"
+                  placeholder="Enter your Phone Number"
+                />
+              </FormGroup>
+            </Form>
+            <Col md="8" sm="4" />
+            <br />
+            <span>
+              <Link to="/DemagraInfo">
+                <Button color="primary">You're almost done!</Button>
+              </Link>
+            </span>
+          </div>
+        </Row>
+      </div>
     );
   }
 }
