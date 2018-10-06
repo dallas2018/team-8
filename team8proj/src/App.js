@@ -1,26 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 //import logo from './logo.svg';
-import './App.css';
-import ContactInfo from'./ContactInfo';
+import "./App.css";
+// import ContactInfo from "./ContactInfo";
+import Welcome from "./Components/Welcome";
 
 class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {}
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
   render() {
     return (
       <div>
-        
-        <form>
-          <label>
-            Name: <input type="text" name= "name"/>
-          </label>
-        </form>
-        <ContactInfo name = "hello"/>
+        <Welcome />
+        {/* <ContactInfo /> */}
       </div>
-      
     );
   }
 }
