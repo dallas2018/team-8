@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText,Col, Row } from 'reactstrap';
 
-export default class Example extends React.Component {
+export default class ContactInfo extends React.Component {
   render() {
     return (
       <Row>
