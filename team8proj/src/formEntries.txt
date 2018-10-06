@@ -1,0 +1,10 @@
+// Contact info page
+"First Name"
+"Middle Name"
+"Last Name"
+"Street Address"
+"Email"
+"Phone Number"
+"Date of Birth"
+"County"
+//

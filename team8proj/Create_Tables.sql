@@ -69,3 +69,9 @@ loginPass varchar(255),
 primary key (loginID)
 
 );
+
+
+
+
+-- TRIGGERS
+
