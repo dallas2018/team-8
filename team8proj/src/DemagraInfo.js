@@ -17,8 +17,8 @@ class DemagraInfo extends Component {
   render() {
     return (
       <div>
-        <div className="text-center">25%</div>
-        <Progress value="25" />
+        <div className="text-center">75%</div>
+        <Progress value="75" />
       </div>
       // <div>
       //   <h1>
