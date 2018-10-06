@@ -3,29 +3,36 @@ import React, { Component } from 'react';
 class DemagraInfo extends Component {
 
     constructor(props){
-        super(props);
-        this.state = {race:this.props.race, gender:this.props.gender, vete}
+        super(props)
+        this.state = {
+            gender:this.props.gender,
+            race:this.props.race,
+            vet:this.props.vet,
+            pris:this.props.pris,
+        }
     }
 
     render() {
         return (
             <div>
-              <form>
-                <label>
-                  Gender:
-                  <input type="text" value={this.state.value} onChange={this.handleChange}/>
-                </label>
-              </form>
-              <form>
-                <label>
-                  Race:
-                  <input type="text" value={this.state.value} onChange={this.handleChange}/>
-                </label>
-              </form>
-
+                <form>
+                    <label>
+                        Gender:
+                        <input type="text" gender="gender"/>
+                        <div>Race:
+                        <input type="text" race="race"/>
+                        </div>
+                        <div>Veteran Status:
+                        <input type="vet" vet="vet"/>
+                        </div>
+                        <div>Conviction:
+                        <input type="text" pris="pris"/>
+                        </div>
+                    </label>
+                </form>
             </div>
         );
     }
 }
 
-export default ContactInfo;
+export default DemagraInfo;
